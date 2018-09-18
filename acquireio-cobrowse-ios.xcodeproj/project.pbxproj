@@ -14,6 +14,7 @@
 		3F0129C6214FD8A400B406EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0129C5214FD8A400B406EE /* Assets.xcassets */; };
 		3F0129C9214FD8A400B406EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0129C7214FD8A400B406EE /* LaunchScreen.storyboard */; };
 		3F0129CC214FD8A400B406EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0129CB214FD8A400B406EE /* main.m */; };
+		3F0129D42150D6B700B406EE /* SampleFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0129D32150D6B700B406EE /* SampleFormViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		3F0129C8214FD8A400B406EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F0129CA214FD8A400B406EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F0129CB214FD8A400B406EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F0129D22150D6B700B406EE /* SampleFormViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleFormViewController.h; sourceTree = "<group>"; };
+		3F0129D32150D6B700B406EE /* SampleFormViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleFormViewController.m; sourceTree = "<group>"; };
 		5F201E612F409A3827AB8B87 /* Pods-acquireio-cobrowse-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-acquireio-cobrowse-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-acquireio-cobrowse-ios/Pods-acquireio-cobrowse-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		BFC88BAB2ACA9656E12424AF /* Pods-acquireio-cobrowse-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-acquireio-cobrowse-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-acquireio-cobrowse-ios/Pods-acquireio-cobrowse-ios.release.xcconfig"; sourceTree = "<group>"; };
 		C3E72AB48F27C20A83749A2D /* libPods-acquireio-cobrowse-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-acquireio-cobrowse-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +77,8 @@
 				3F0129C7214FD8A400B406EE /* LaunchScreen.storyboard */,
 				3F0129CA214FD8A400B406EE /* Info.plist */,
 				3F0129CB214FD8A400B406EE /* main.m */,
+				3F0129D22150D6B700B406EE /* SampleFormViewController.h */,
+				3F0129D32150D6B700B406EE /* SampleFormViewController.m */,
 			);
 			path = "acquireio-cobrowse-ios";
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 			files = (
 				3F0129C1214FD8A200B406EE /* ViewController.m in Sources */,
 				3F0129CC214FD8A400B406EE /* main.m in Sources */,
+				3F0129D42150D6B700B406EE /* SampleFormViewController.m in Sources */,
 				3F0129BE214FD8A200B406EE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,9 +356,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3Y33NHY884;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "acquireio-cobrowse-ios/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sdk.acquireio-cobrowse-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -365,9 +375,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3Y33NHY884;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "acquireio-cobrowse-ios/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sdk.acquireio-cobrowse-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  acquireio-cobrowse-ios
 //
-//  Created by Raju Jangid on 9/17/18.
-//  Copyright © 2018 AcquireIO Inc. All rights reserved.
+//  Created by Raju Jangid on 9/17/2017.
+//  Copyright © 2017 AcquireIO Inc. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import <AcquireIO/AcquireIO.h>
 
 @interface AppDelegate ()
 
@@ -18,6 +19,30 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;
+}
+
+-(void) setupAcquireIO{
+    
+    NSString *accountID = @"<YOUR_ACCOUNT_ID>";
+#error TODO: To start using this project, copy-paste your YOUR_ACCOUNT_ID and comment this line, see more https://goo.gl/6KKNRG
+    
+    NSDictionary *option = @{@"UseDefaultTheme":@YES,
+                             //@"ScreenShareBorder": @NO,
+                             @"ShowDefaultStopButton": @NO
+                             };
+    
+    AcquireIOConfig *config = [AcquireIOConfig config];
+    [config setDict:option];
+    
+#error TODO: To start Verify your users, see more https://goo.gl/maZws4 or comment following 2 lines
+    [[AcquireIO support] setVisitorHash:@"<_Nonnull String your_hmac_of_email>"];
+    [[AcquireIO support] setVisitor:@"<Nullable String Name>" phone:@"<Nullable String Phone Number>" andEmail:@"<Nullable String Email>"];
+    
+#error TODO: To add extra field for online visitor, see more https://goo.gl/n9eWHq or comment following  line
+    [[AcquireIO support] setVisitorExtraField:@[@{@"l":@"<LABLE OPTIONAL>",@"n":@"<Name key>",@"v":@"<Value>"}]];
+
+    [[AcquireIO support] setAccount:accountID withOptions:config];
+    
 }
 
 
